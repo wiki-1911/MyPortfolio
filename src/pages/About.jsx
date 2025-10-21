@@ -195,7 +195,7 @@ export default function About() {
               viewport={{ once: true, amount: 0.2 }}
               className="cursor-pointer h-full"
               onClick={() =>
-                (window.location.href = "http://localhost:3000/whatido")
+                (window.location.href = "https://trandat.vercel.app/whatido")
               }
             >
               <Card className="shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
@@ -223,7 +223,7 @@ export default function About() {
               viewport={{ once: true, amount: 0.2 }}
               className="cursor-pointer h-full"
               onClick={() =>
-                (window.location.href = "http://localhost:3000/whatido")
+                (window.location.href = "https://trandat.vercel.app/whatido")
               }
             >
               <Card className="shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
