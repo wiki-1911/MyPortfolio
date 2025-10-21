@@ -17,11 +17,16 @@ import {
 
 export default function About() {
   const fadeIn = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 40, scale: 0.95 },
     visible: (i) => ({
       opacity: 1,
       y: 0,
-      transition: { delay: i * 0.15, duration: 0.5, ease: "easeOut" },
+      scale: 1,
+      transition: {
+        delay: i * 0.15,
+        duration: 0.6,
+        ease: [0.25, 0.1, 0.25, 1],
+      },
     }),
   };
 
@@ -31,7 +36,6 @@ export default function About() {
   return (
     <Layout>
       <div className="max-w-6xl mx-auto px-6 py-10 space-y-12 justify-items-center pr-60">
-        {/* Giới thiệu */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <motion.div
             variants={fadeIn}
@@ -48,7 +52,8 @@ export default function About() {
           <motion.section
             variants={fadeIn}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
             className={sectionClass}
           >
             <h3 className="text-2xl font-semibold text-blue-600 mb-4">
@@ -70,12 +75,12 @@ export default function About() {
           </motion.section>
         </div>
 
-        {/* Học nghiệp & Ngoại ngữ */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <motion.section
             variants={fadeIn}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
             custom={1}
             className={sectionClass}
           >
@@ -99,7 +104,8 @@ export default function About() {
           <motion.section
             variants={fadeIn}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
             custom={3}
             className={sectionClass}
           >
@@ -119,7 +125,6 @@ export default function About() {
               giải pháp tối ưu hóa quy trình doanh nghiệp.
             </p>
           </motion.section>
-          
         </div>
         <h3 className="text-3xl font-semibold text-red-600 text-center">
           Kỹ Năng Mềm
@@ -127,11 +132,11 @@ export default function About() {
         <motion.section
           variants={fadeIn}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
           custom={4}
           className={sectionClass}
         >
-          {/* Lưới 3 cột các thẻ kỹ năng */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               {
@@ -161,12 +166,13 @@ export default function About() {
             ].map((skill, index) => (
               <motion.div
                 whileHover={{ scale: 1.05 }}
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.2 }}
                 key={index}
                 className="cursor-pointer"
               >
                 <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 rounded-xl">
                   <CardContent className="p-6 flex flex-col items-center text-center">
-                    {/* ✅ chỉ render icon và name */}
                     {skill.icon}
                     <p className="text-gray-700 font-medium text-lg">
                       {skill.name}
@@ -185,8 +191,12 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               whileHover={{ scale: 1.03 }}
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               className="cursor-pointer h-full"
-              onClick={() => (window.location.href = "http://localhost:3000/whatido")}
+              onClick={() =>
+                (window.location.href = "http://localhost:3000/whatido")
+              }
             >
               <Card className="shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                 <img
@@ -207,11 +217,14 @@ export default function About() {
               </Card>
             </motion.div>
 
-            {/* Project Management App */}
             <motion.div
               whileHover={{ scale: 1.03 }}
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
               className="cursor-pointer h-full"
-              onClick={() => (window.location.href = "http://localhost:3000/whatido")}
+              onClick={() =>
+                (window.location.href = "http://localhost:3000/whatido")
+              }
             >
               <Card className="shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                 <img
@@ -234,7 +247,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Công nghệ & Công cụ */}
         <div className="text-center space-y-6">
           <h3 className="text-3xl font-semibold text-purple-600">
             Công Nghệ & Công Cụ

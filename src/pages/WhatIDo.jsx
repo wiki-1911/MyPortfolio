@@ -6,8 +6,8 @@ import BookingCare from "../assets/images/bookingcare.png";
 import NetworkBasic from "../assets/images/NetworkAcademy.png";
 import JS1 from "../assets/images/JS1.png";
 import JS2 from "../assets/images/JS2.png";
-import Skill from "../components/Skill.jsx"
-import { IoIosAddCircle } from "react-icons/io";;
+import Skill from "../components/Skill.jsx";
+import { IoIosAddCircle } from "react-icons/io";
 
 export default function WhatIDo() {
   const [zoomImage, setZoomImage] = useState(null);
@@ -20,12 +20,10 @@ export default function WhatIDo() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-10 space-y-12 text-center">
-      {/* 🩺 Projects Section */}
       <div className="grid md:grid-cols-2 gap-6">
         <h3 className="text-3xl font-semibold text-blue-600 mb-6 md:col-span-2">
           Dự Án
         </h3>
-        {/* Project 1 */}
         <motion.div
           whileHover={{ scale: 1.03 }}
           className="cursor-pointer "
@@ -66,21 +64,26 @@ export default function WhatIDo() {
                 <b>Tính năng chính:</b>
                 <ul>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Đặt lịch hẹn linh hoạt theo bác sĩ và khung thời gian phù
-                    hợp.
+                    <IoIosAddCircle className="text-green-600 inline" /> Đặt
+                    lịch hẹn linh hoạt theo bác sĩ và khung thời gian phù hợp.
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Kiểm soát truy cập dựa trên vai trò (Quản trị viên, Bác sĩ,
-                    Bệnh nhân).
-                  </li>
-                  <li><IoIosAddCircle className = "text-green-600 inline" /> Xác thực an toàn sử dụng JWT với tích hợp Identity.</li>
-                  <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Tích hợp VNPay đảm bảo thanh toán trực tuyến nhanh chóng và
-                    an toàn.
+                    <IoIosAddCircle className="text-green-600 inline" /> Kiểm
+                    soát truy cập dựa trên vai trò (Quản trị viên, Bác sĩ, Bệnh
+                    nhân).
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Thống kê và báo cáo chi tiết hỗ trợ quản lý và ra quyết
-                    định.
+                    <IoIosAddCircle className="text-green-600 inline" /> Xác
+                    thực an toàn sử dụng JWT với tích hợp Identity.
+                  </li>
+                  <li>
+                    <IoIosAddCircle className="text-green-600 inline" /> Tích
+                    hợp VNPay đảm bảo thanh toán trực tuyến nhanh chóng và an
+                    toàn.
+                  </li>
+                  <li>
+                    <IoIosAddCircle className="text-green-600 inline" /> Thống
+                    kê và báo cáo chi tiết hỗ trợ quản lý và ra quyết định.
                   </li>
                 </ul>
               </p>
@@ -109,12 +112,14 @@ export default function WhatIDo() {
           </Card>
         </motion.div>
 
-        {/* Project 2 */}
         <motion.div
           whileHover={{ scale: 1.03 }}
           className="cursor-pointer"
           onClick={() =>
-            window.open("https://github.com/BanhTuanKiet/ProjectManagement", "_blank")
+            window.open(
+              "https://github.com/BanhTuanKiet/ProjectManagement",
+              "_blank"
+            )
           }
         >
           <Card className="shadow-lg border border-gray-200 hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
@@ -146,24 +151,28 @@ export default function WhatIDo() {
                 <b>Tính năng chính:</b>
                 <ul>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Quản lý vòng đời dự án toàn diện: Từ Backlog → Sprint →
-                    Nhiệm vụ.
+                    <IoIosAddCircle className="text-green-600 inline" /> Quản lý
+                    vòng đời dự án toàn diện: Từ Backlog → Sprint → Nhiệm vụ.
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Hệ thống phân quyền và vai trò linh hoạt, dễ dàng tùy chỉnh.
+                    <IoIosAddCircle className="text-green-600 inline" /> Hệ
+                    thống phân quyền và vai trò linh hoạt, dễ dàng tùy chỉnh.
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Cập nhật thời gian thực tức thì với công nghệ SignalR.
+                    <IoIosAddCircle className="text-green-600 inline" /> Cập
+                    nhật thời gian thực tức thì với công nghệ SignalR.
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Phân công nhiệm vụ nhanh chóng kèm thông báo thời gian thực.
+                    <IoIosAddCircle className="text-green-600 inline" /> Phân
+                    công nhiệm vụ nhanh chóng kèm thông báo thời gian thực.
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Hỗ trợ tính năng quay lui (snapshot) để lưu trạng thái nhiệm
-                    vụ.
+                    <IoIosAddCircle className="text-green-600 inline" /> Hỗ trợ
+                    tính năng quay lui (snapshot) để lưu trạng thái nhiệm vụ.
                   </li>
                   <li>
-                    <IoIosAddCircle className = "text-green-600 inline" /> Mời thành viên tham gia dự án dễ dàng qua email.
+                    <IoIosAddCircle className="text-green-600 inline" /> Mời
+                    thành viên tham gia dự án dễ dàng qua email.
                   </li>
                 </ul>
               </p>
@@ -203,7 +212,6 @@ export default function WhatIDo() {
         <Skill />
       </div>
 
-      {/* 📜 Certificates */}
       <div>
         <h3 className="text-3xl font-semibold text-pink-600 mb-6">Chứng Chỉ</h3>
         <div className="flex overflow-x-auto gap-4 pb-2 scrollbar-thin scrollbar-thumb-gray-400">
@@ -222,7 +230,6 @@ export default function WhatIDo() {
         </div>
       </div>
 
-      {/* Zoomed Image Modal */}
       {zoomImage && (
         <div
           className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"

@@ -7,11 +7,11 @@ export default function Navbar() {
     { label: "Trang chủ", path: "/about" },
     { label: "Những gì tôi làm?", path: "/whatido" },
     { label: "Bài viết", path: "/blog" },
-    { label: "Liên hệ", path: "/contact" }
+    { label: "Liên hệ", path: "/contact" },
   ];
 
   return (
-    <nav className="flex justify-between items-center px-8 py-4 shadow bg-white">
+    <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 shadow bg-white z-50">
       <h3 className="text-xl font-semibold text-blue-600">Trần Đạt</h3>
       <ul className="flex justify-center items-center gap-8">
         {navItems.map((item) => (

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import About from "./pages/About";
 import WhatIDo from "./pages/WhatIDo";
 import Contact from "./pages/Contact";
@@ -18,6 +19,7 @@ import JavaScript6 from "./pages/posts/JavaScript6.jsx";
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800">
         <Navbar />
         <main className="flex-grow px-4 md:px-16 py-8">

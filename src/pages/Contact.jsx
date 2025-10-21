@@ -40,7 +40,6 @@ const ContactForm = () => {
 
   return (
     <div className="flex flex-col md:flex-row justify-between max-w-5xl mx-auto px-6 py-10 gap-10">
-      {/* Left Info Section */}
       <div className="md:w-1/2 flex flex-col space-y-4">
         <h1 className="text-5xl font-bold mb-4 text-gray-800">CONTACT</h1>
         <h2 className="text-2xl font-semibold text-green-700">DAT TRAN</h2>
@@ -71,7 +70,6 @@ const ContactForm = () => {
         </div>
       </div>
 
-      {/* Right Form Section */}
       <form
         onSubmit={handleSubmit}
         className="md:w-1/2 flex flex-col space-y-4 bg-white p-6 rounded-lg shadow-md"

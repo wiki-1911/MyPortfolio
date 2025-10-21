@@ -7,7 +7,15 @@ const Skill = () => {
     {
       title: "Giao diện người dùng (Frontend)",
       color: "blue",
-      skills: ["ReactJS", "Tailwind", "HTML", "CSS", "NextJS", "JavaScript", "Bootstrap"],
+      skills: [
+        "ReactJS",
+        "Tailwind",
+        "HTML",
+        "CSS",
+        "NextJS",
+        "JavaScript",
+        "Bootstrap",
+      ],
     },
     {
       title: "Xử lý & Dữ liệu (Backend & DB)",
@@ -17,7 +25,15 @@ const Skill = () => {
     {
       title: "Công cụ (Tools)",
       color: "green",
-      skills: ["Firebase", "Cloudinary", "SignalR", "JWT", "Git", "VS Code", "Google Cloud SQL"],
+      skills: [
+        "Firebase",
+        "Cloudinary",
+        "SignalR",
+        "JWT",
+        "Git",
+        "VS Code",
+        "Google Cloud SQL",
+      ],
     },
   ];
 
@@ -33,13 +49,18 @@ const Skill = () => {
         <motion.div
           key={idx}
           whileHover={{ scale: 1.03, y: -5 }}
-          transition={{ type: "spring", stiffness: 200 }}
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, type: "spring", stiffness: 200 }}
+          viewport={{ once: true }}
           className="flex"
         >
           <Card className="hover:shadow-xl transition-all duration-300 flex-1">
             <CardContent className="flex flex-col h-full justify-items-center">
               <h4
-                className={`text-xl font-semibold mb-3 border-b-2 p-1 ${colorClasses[item.color]}`}
+                className={`text-xl font-semibold mb-3 border-b-2 p-1 ${
+                  colorClasses[item.color]
+                }`}
               >
                 {item.title}
               </h4>

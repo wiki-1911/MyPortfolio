@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "../components/ui/Card.jsx";
 import Java1 from "../assets/images/java1.png";
 import Java2 from "../assets/images/java2.png";
@@ -87,25 +88,34 @@ export default function Blog() {
         Dưới đây là 9 bài viết nổi bật mình đã tổng hợp từ NetAcad, W3Schools, và nhiều nguồn khác.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {posts.map((post) => (
-          <Card key={post.id} className="hover:shadow-lg transition">
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-48 object-cover rounded-t-lg"
-            />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-blue-600 mb-2">{post.title}</h3>
-              <p className="text-gray-600 mb-4">{post.desc}</p>
-              <Link
-                to={post.link}
-                className="text-pink-500 font-medium hover:underline "
-              >
-                Đọc bài viết →
-              </Link>
-            </CardContent>
-          </Card>
+          <motion.div
+            key={post.id}
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Link to={post.link}>
+              <Card className="group border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <div className="overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <CardContent className="p-5">
+                  <h3 className="text-lg font-semibold text-blue-600 mb-2 group-hover:text-blue-700 transition">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{post.desc}</p>
+                  <span className="text-pink-500 font-medium group-hover:underline">
+                    Đọc bài viết →
+                  </span>
+                </CardContent>
+              </Card>
+            </Link>
+          </motion.div>
         ))}
       </div>
     </div>
