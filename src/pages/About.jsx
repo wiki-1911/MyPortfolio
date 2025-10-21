@@ -5,7 +5,7 @@ import Skill from "../components/Skill.jsx";
 import JiraHome from "../assets/images/JiraHome.png";
 import BookingCare from "../assets/images/bookingcare.png";
 import { Card, CardContent } from "../components/ui/Card.jsx";
-import TranDat from "../assets/images/TranDat2.png";
+import TranDat from "../assets/images/TranDat.png";
 import {
   FaComments,
   FaUserCheck,
