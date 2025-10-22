@@ -8,10 +8,12 @@ export default function Java2() {
       </h1>
 
       <p className="mb-6 text-lg">
-        Bạn đã bao giờ tự hỏi làm thế nào Java mô phỏng thế giới thực một cách tinh tế?
-        Đó chính là sức mạnh của <strong>Lập trình hướng đối tượng (OOP)</strong>.
-        Trong bài viết này, chúng ta sẽ khám phá 4 tính chất cốt lõi của OOP trong Java:
-        <strong> Kế thừa</strong>, <strong>Đa hình</strong>, <strong>Trừu tượng</strong>, và
+        Bạn đã bao giờ tự hỏi làm thế nào Java mô phỏng thế giới thực một cách
+        tinh tế? Đó chính là sức mạnh của{" "}
+        <strong>Lập trình hướng đối tượng (OOP)</strong>. Trong bài viết này,
+        chúng ta sẽ khám phá 4 tính chất cốt lõi của OOP trong Java:
+        <strong> Kế thừa</strong>, <strong>Đa hình</strong>,{" "}
+        <strong>Trừu tượng</strong>, và
         <strong> Đóng gói</strong>. Hãy cùng bắt đầu hành trình để làm chủ Java!
       </p>
 
@@ -29,8 +31,8 @@ export default function Java2() {
       </h2>
       <p className="mb-4">
         Trong Java, <strong>Class</strong> giống như một bản thiết kế, còn{" "}
-        <strong>Object</strong> là sản phẩm được tạo ra từ bản thiết kế đó. Ví dụ, nếu
-        "Xe hơi" là một class, thì "Xe Toyota" là một object cụ thể.
+        <strong>Object</strong> là sản phẩm được tạo ra từ bản thiết kế đó. Ví
+        dụ, nếu "Xe hơi" là một class, thì "Xe Toyota" là một object cụ thể.
       </p>
 
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6 font-mono text-sm">
@@ -51,16 +53,17 @@ public class Main {
       </pre>
 
       <p className="mb-6 italic text-gray-600">
-        💡 Mẹo: Hãy nghĩ về Class như công thức nấu ăn, còn Object là món ăn bạn làm ra từ
-        công thức đó!
+        💡 Mẹo: Hãy nghĩ về Class như công thức nấu ăn, còn Object là món ăn bạn
+        làm ra từ công thức đó!
       </p>
 
       <h2 className="text-2xl font-semibold text-blue-700 mt-8 mb-4">
         2. Kế thừa (Inheritance): Tái sử dụng mã nguồn
       </h2>
       <p className="mb-4">
-        Kế thừa cho phép một class "kế thừa" các thuộc tính và phương thức từ class khác,
-        giúp tiết kiệm thời gian và tăng tính tái sử dụng. Hãy xem ví dụ dưới đây:
+        Kế thừa cho phép một class "kế thừa" các thuộc tính và phương thức từ
+        class khác, giúp tiết kiệm thời gian và tăng tính tái sử dụng. Hãy xem
+        ví dụ dưới đây:
       </p>
 
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6 font-mono text-sm">
@@ -82,16 +85,17 @@ public class Main {
       </pre>
 
       <p className="mb-6">
-        Trong ví dụ này, <code>Dog</code> kế thừa từ <code>Animal</code>, nên nó có thể sử
-        dụng phương thức <code>eat()</code> mà không cần định nghĩa lại.
+        Trong ví dụ này, <code>Dog</code> kế thừa từ <code>Animal</code>, nên nó
+        có thể sử dụng phương thức <code>eat()</code> mà không cần định nghĩa
+        lại.
       </p>
 
       <h2 className="text-2xl font-semibold text-blue-700 mt-8 mb-4">
         3. Đa hình (Polymorphism): Linh hoạt và mạnh mẽ
       </h2>
       <p className="mb-4">
-        Đa hình cho phép một phương thức hoạt động khác nhau tùy thuộc vào đối tượng gọi
-        nó. Điều này giúp mã của bạn linh hoạt hơn, dễ dàng mở rộng.
+        Đa hình cho phép một phương thức hoạt động khác nhau tùy thuộc vào đối
+        tượng gọi nó. Điều này giúp mã của bạn linh hoạt hơn, dễ dàng mở rộng.
       </p>
 
       <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-6 font-mono text-sm">
@@ -112,21 +116,21 @@ public class Main {
       </pre>
 
       <p className="mb-6">
-        Ở đây, biến <code>animal</code> có kiểu <code>Animal</code> nhưng tham chiếu đến{" "}
-        <code>Cat</code>, nên phương thức <code>sound()</code> của <code>Cat</code> được
-        gọi. Đây là sức mạnh của đa hình!
+        Ở đây, biến <code>animal</code> có kiểu <code>Animal</code> nhưng tham
+        chiếu đến <code>Cat</code>, nên phương thức <code>sound()</code> của{" "}
+        <code>Cat</code> được gọi. Đây là sức mạnh của đa hình!
       </p>
 
       <h2 className="text-2xl font-semibold text-blue-700 mt-8 mb-4">
         4. Trừu tượng và Đóng gói: Bảo vệ và đơn giản hóa
       </h2>
       <p className="mb-4">
-        - <strong>Trừu tượng (Abstraction)</strong>: Ẩn đi các chi tiết phức tạp, chỉ hiển
-        thị những gì cần thiết. Ví dụ, bạn có thể dùng{" "}
-        <code>abstract class</code> hoặc <code>interface</code> để định nghĩa hành vi mà
-        không cần chi tiết thực thi. <br />
-        - <strong>Đóng gói (Encapsulation)</strong>: Bảo vệ dữ liệu bằng cách giới hạn
-        truy cập trực tiếp, sử dụng <code>private</code> và các phương thức{" "}
+        - <strong>Trừu tượng (Abstraction)</strong>: Ẩn đi các chi tiết phức
+        tạp, chỉ hiển thị những gì cần thiết. Ví dụ, bạn có thể dùng{" "}
+        <code>abstract class</code> hoặc <code>interface</code> để định nghĩa
+        hành vi mà không cần chi tiết thực thi. <br />-{" "}
+        <strong>Đóng gói (Encapsulation)</strong>: Bảo vệ dữ liệu bằng cách giới
+        hạn truy cập trực tiếp, sử dụng <code>private</code> và các phương thức{" "}
         <code>getter/setter</code>.
       </p>
 
@@ -151,24 +155,28 @@ public class Main {
       </pre>
 
       <p className="mb-6">
-        Đóng gói giúp kiểm soát cách dữ liệu được truy cập và thay đổi, tăng tính bảo mật
-        và dễ bảo trì.
+        Đóng gói giúp kiểm soát cách dữ liệu được truy cập và thay đổi, tăng
+        tính bảo mật và dễ bảo trì.
       </p>
 
-      <h2 className="text-2xl font-semibold text-blue-700 mb-4">Tóm tắt kiến thức</h2>
+      <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+        Tóm tắt kiến thức
+      </h2>
       <ul className="list-disc list-inside mb-6 text-gray-700">
         <li>
-          <strong>Class</strong> là bản thiết kế, <strong>Object</strong> là thực thể cụ
-          thể.
+          <strong>Class</strong> là bản thiết kế, <strong>Object</strong> là
+          thực thể cụ thể.
         </li>
         <li>OOP có 4 tính chất: Kế thừa, Đa hình, Trừu tượng, Đóng gói.</li>
         <li>
-          Sử dụng <code>extends</code> để kế thừa và <code>super</code> để gọi phương thức
-          hoặc constructor của class cha.
+          Sử dụng <code>extends</code> để kế thừa và <code>super</code> để gọi
+          phương thức hoặc constructor của class cha.
         </li>
       </ul>
 
-      <h2 className="text-2xl font-semibold text-blue-700 mb-4">Học thêm ở đâu?</h2>
+      <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+        Học thêm ở đâu?
+      </h2>
       <p className="mb-4">
         Muốn đào sâu hơn về OOP trong Java? Hãy khám phá các tài nguyên sau:
       </p>
@@ -194,8 +202,8 @@ public class Main {
       </ul>
 
       <p className="mt-8 text-center text-gray-600">
-        Bạn thấy bài viết này hữu ích? Hãy chia sẻ và để lại bình luận để mình tiếp tục
-        mang đến những nội dung chất lượng nhé!
+        Bạn thấy bài viết này hữu ích? Hãy chia sẻ và để lại bình luận để mình
+        tiếp tục mang đến những nội dung chất lượng nhé!
       </p>
     </div>
   );

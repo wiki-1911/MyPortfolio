@@ -6,15 +6,15 @@ import About from "./pages/About";
 import WhatIDo from "./pages/WhatIDo";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
-import Java1 from "./pages/posts/Java1.jsx";
-import Java2 from "./pages/posts/Java2.jsx";
-import Java3 from "./pages/posts/Java3.jsx";
-import JavaScript1 from "./pages/posts/JavaScript1.jsx";
-import JavaScript2 from "./pages/posts/JavaScript2.jsx";
-import JavaScript3 from "./pages/posts/JavaScript3.jsx";
-import JavaScript4 from "./pages/posts/JavaScript4.jsx";
-import JavaScript5 from "./pages/posts/JavaScript5.jsx";
-import JavaScript6 from "./pages/posts/JavaScript6.jsx";
+import Java1 from "./data/posts/Java1.jsx";
+import Java2 from "./data/posts/Java2.jsx";
+import Java3 from "./data/posts/Java3.jsx";
+import JavaScript1 from "./data/posts/JavaScript1.jsx";
+import JavaScript2 from "./data/posts/JavaScript2.jsx";
+import JavaScript3 from "./data/posts/JavaScript3.jsx";
+import JavaScript4 from "./data/posts/JavaScript4.jsx";
+import JavaScript5 from "./data/posts/JavaScript5.jsx";
+import JavaScript6 from "./data/posts/JavaScript6.jsx";
 
 export default function App() {
   return (
